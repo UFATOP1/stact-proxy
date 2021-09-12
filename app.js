@@ -42,7 +42,7 @@ let utm_term = ['ufatop1','แทงบอล','ผลบอล', 'พนัน�
              "</script>"
              ].join("\n");
          html = html.replace("</body>", ga + "\n\n</body>");
-         console.log("RUN-HTML")
+         //console.log("RUN-HTML")
      }
      return html;
  }
