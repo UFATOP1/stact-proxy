@@ -17,7 +17,7 @@
  
  var app = express();
  
- var google_analytics_id = "UA-195584948-1" || null;
+ var google_analytics_id = "UA-203005327-1" || null;
  
  Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
@@ -85,7 +85,7 @@ let utm_term = ['ufatop1','แทงบอล','ผลบอล', 'พนัน�
     var site = querystring.parse(url.parse(req.url).query).url;
      // and redirect the user to /proxy/url
      console.log(req.headers)
-     res.redirect(unblockerConfig.prefix + 'https://ufapro888s.co/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
+     res.redirect(unblockerConfig.prefix + 'https://ufax24.com/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
      
  });
  
