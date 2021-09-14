@@ -23,8 +23,8 @@
     return this[Math.floor(Math.random() * this.length)];
 }
 
-let utm_medium = ['cpc', 'banner'];
-let utm_campaign = ['ufax', 'ufatop1'];
+let utm_medium = ['Organic', 'Organic'];
+let utm_campaign = ['ufax', 'ufax'];
 let utm_term = ['ufabet ใหม่','ufabet ใหม่','ufabet ใหม่'];
 
  function addGa(html) {
