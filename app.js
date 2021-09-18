@@ -17,15 +17,16 @@
  
  var app = express();
  
- var google_analytics_id = "UA-203005327-1" || null;
+ var google_analytics_id = "UA-154557947-11" || null;
  
  Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
-let utm_medium = ['Organic', 'Organic'];
-let utm_campaign = ['ufax', 'ufax'];
-let utm_term = ['ufabet ใหม่','ufabet ใหม่','ufabet ใหม่'];
+	let utm_source = ['','']
+	let utm_medium = ['down', 'bot'];
+	let utm_campaign = ['down', 'bot'];
+ let utm_term = ['ไวกว่า','https://ufatop1.net/','ใหญ่สะ', 'แล้ว!', 'เดท'];
 
  function addGa(html) {
      if (google_analytics_id) {
@@ -65,7 +66,7 @@ let utm_term = ['ufabet ใหม่','ufabet ใหม่','ufabet ใหม่
  }
  
  var unblockerConfig = {
-     prefix: '/proxy/',
+     prefix: '/kissme/',
      responseMiddleware: [
          googleAnalyticsMiddleware
      ]
@@ -80,12 +81,12 @@ let utm_term = ['ufabet ใหม่','ufabet ใหม่','ufabet ใหม่
  app.use('/', express.static(__dirname + './proxy/'));
  
  // this is for users who's form actually submitted due to JS being disabled or whatever
- app.get("/ufax", function(req, res) {
+ app.get("/kissme", function(req, res) {
      // grab the "url" parameter from the querystring
     var site = querystring.parse(url.parse(req.url).query).url;
      // and redirect the user to /proxy/url
      console.log(req.headers)
-     res.redirect(unblockerConfig.prefix + 'https://ufax24.com/ufabet/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
+     res.redirect(unblockerConfig.prefix + 'https://1ufabet.com/?utm_source=down&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
      
  });
  
