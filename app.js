@@ -86,7 +86,7 @@
     var site = querystring.parse(url.parse(req.url).query).url;
      // and redirect the user to /proxy/url
      console.log(req.headers)
-     res.redirect(unblockerConfig.prefix + 'https://ufatop1.net/?utm_source=down&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
+     res.redirect(unblockerConfig.prefix + 'https://ufapro888s.info/?utm_source=down&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
      
  });
  
