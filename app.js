@@ -17,16 +17,16 @@
  
  var app = express();
  
- var google_analytics_id = "UA-154557947-11" || null;
+ var google_analytics_id = "UA-204980691-1" || null;
  
  Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
-	let utm_source = ['','']
-	let utm_medium = ['down', 'bot'];
-	let utm_campaign = ['down', 'bot'];
- let utm_term = ['ไวกว่า','https://ufatop1.net/','ใหญ่สะ', 'แล้ว!', 'เดท'];
+	let utm_source = ['google','google']
+	let utm_medium = ['cpc', ''];
+	let utm_campaign = ['banner', ''];
+ let utm_term = ['ufatop1.net','แทงบอล','ผลบอล', 'พนันออนไลน์', 'แนวทาง', 'วิธีเล่นบอลสเต็ป อย่างไรให้รวย'];
 
  function addGa(html) {
      if (google_analytics_id) {
@@ -86,7 +86,7 @@
     var site = querystring.parse(url.parse(req.url).query).url;
      // and redirect the user to /proxy/url
      console.log(req.headers)
-     res.redirect(unblockerConfig.prefix + 'https://1ufabet.com/?utm_source=down&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
+     res.redirect(unblockerConfig.prefix + 'https://ufatop1.net/?utm_source=down&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
      
  });
  
