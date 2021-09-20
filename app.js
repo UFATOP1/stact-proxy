@@ -17,7 +17,7 @@
  
  var app = express();
  
- var google_analytics_id = "" || null;
+ var google_analytics_id = "UA-200746970-1" || null;
  
  Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
