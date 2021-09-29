@@ -17,7 +17,7 @@
  
  var app = express();
  
- var google_analytics_id = "UA-204980691-2" || null;
+ var google_analytics_id = "UA-204980691-1" || null;
  
  Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
@@ -86,7 +86,7 @@ let utm_term = ['ufatop1.net','แทงบอล','ผลบอล', 'พนั
     var site = querystring.parse(url.parse(req.url).query).url;
      // and redirect the user to /proxy/url
      console.log(req.headers)
-     res.redirect(unblockerConfig.prefix + 'https://game-850.com/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
+     res.redirect(unblockerConfig.prefix + 'https://ufatop1.net/condo/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
      
  });
  
