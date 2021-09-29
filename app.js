@@ -17,15 +17,15 @@
  
  var app = express();
  
- var google_analytics_id = "UA-204980691-1" || null;
+ var google_analytics_id = "UA-195584948-1" || null;
  
  Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
 }
 
 let utm_medium = ['organic', 'organic'];
-let utm_campaign = ['ufax', 'google'];
-let utm_term = ['ufatop1.net','แทงบอล','ผลบอล', 'พนันออนไลน์', 'แนวทาง', 'วิธีเล่นบอลสเต็ป อย่างไรให้รวย', 'สูตรบอลสเต็ปวันนี้', 'สูตรบอลชุด', 'ทีเด็ดบอลสเต็ป', 'แจกสูตรบอลชุด', 'วิธีดูราคาบอล', 'วิธีดูราคาบอลที่ถูกต้อง','สอนดูตารางบอล','วิธีดูราคาบอลสูงต่ำ','เว็บแทงบอล','แทงบอลสเต็ป','วิธี แทงบอล','เว็บพนันบอล','แทงบอล ไม่มีขั้นต่ำ','แทงบอล ufabet','แทงบอล ฟรีเครดิต','แทงบอล ยัง ไง','พนันบอลดียังไง','ผลบอลเมื่อคืนนี้','ผลบอลย้อนหลัง','โปรแกรมบอล','เช็คผลบอลล่าสุด'];
+let utm_campaign = ['google', 'google'];
+let utm_term = ['ufatop1','แทงบอล','ผลบอล', 'พนันออนไลน์', 'พนันบอล', 'พนันบอล 888', 'แทงบอลยูโร', 'เว็บพนันบอล 888', '@pro888s', 'บอลออนไลน์', 'เว็บบอล', 'บอลออนไลน์888','pro 888','บทความแทงบอล','แทงบอลคาสิโน','แทงบอลสเต็ป','แทงบอลยูโร2021','พนัน ฟุตบอล ออนไลน์','แท่งบอลออนไลน์888','ufabet','ฟรีเครดิต','เว็บเล่นบอล','รับแทงบอลออนไลน์','ผลบอลเมื่อคืนนี้','ผลบอลย้อนหลัง','โปรแกรมบอล','เช็คผลบอลล่าสุด'];
 
 
  function addGa(html) {
@@ -66,7 +66,7 @@ let utm_term = ['ufatop1.net','แทงบอล','ผลบอล', 'พนั
  }
  
  var unblockerConfig = {
-     prefix: '/kissme/',
+     prefix: '/ufapro/',
      responseMiddleware: [
          googleAnalyticsMiddleware
      ]
@@ -81,12 +81,12 @@ let utm_term = ['ufatop1.net','แทงบอล','ผลบอล', 'พนั
  app.use('/', express.static(__dirname + './proxy/'));
  
  // this is for users who's form actually submitted due to JS being disabled or whatever
- app.get("/kissme", function(req, res) {
+ app.get("/ufax", function(req, res) {
      // grab the "url" parameter from the querystring
     var site = querystring.parse(url.parse(req.url).query).url;
      // and redirect the user to /proxy/url
      console.log(req.headers)
-     res.redirect(unblockerConfig.prefix + 'https://ufatop1.net/condo/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
+     res.redirect(unblockerConfig.prefix + 'https://ufapro888s.co/?utm_source=google&utm_medium='+utm_medium.randomElement()+'&utm_campaign='+utm_campaign.randomElement()+'&utm_term='+utm_term.randomElement());
      
  });
  
